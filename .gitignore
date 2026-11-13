@@ -1,0 +1,13 @@
+node_modules/
+dist/
+.vercel/
+.env
+.env.*
+!.env.example
+.DS_Store
+Thumbs.db
+._*
+*.log
+Andariz-Home-preview.html
+Andariz elementos visuales/
+docs/Conversaciones Andariz/

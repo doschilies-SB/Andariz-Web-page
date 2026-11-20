@@ -5,11 +5,11 @@ const root = path.resolve(path.dirname(fileURLToPath(import.meta.url)), '..');
 const output = path.join(root, 'dist');
 await rm(output, { recursive: true, force: true });
 await mkdir(output, { recursive: true });
-for (const file of ['index.html', 'assets', '404.html', 'robots.txt']) {
+for (const file of ['index.html', 'viajes-en-grupo.html', 'assets', '404.html', 'robots.txt']) {
   await cp(path.join(root, file), path.join(output, file), { recursive: true });
 }
 await mkdir(path.join(output, 'src'), { recursive: true });
-for (const file of ['styles.css', 'main.js', 'config.js']) {
+for (const file of ['styles.css', 'group-travel.css', 'main.js', 'group-travel.js', 'config.js']) {
   await cp(path.join(root, 'src', file), path.join(output, 'src', file));
 }
 console.log('Home generada en dist/. Sin dependencias de producción.');

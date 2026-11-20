@@ -18,19 +18,21 @@ export const interests = Object.freeze({
 // Para sustituirla, indicar una ruta local; ver docs/RECURSOS_PENDIENTES.md.
 // El marco, la posición y la superposición se conservan en CSS.
 export const visualAssets = Object.freeze({
-  hero: null,
-  nile: null,
+  hero: '/assets/photos/hero-amazonas.jpg',
+  nile: '/assets/photos/hero-nilo.jpg',
   lodge: null,
   egypt: null,
   amazon: null,
+  custom: null,
 });
 
 export const visualFocalPoints = Object.freeze({
-  hero: '50% 50%',
-  nile: '50% 50%',
+  hero: '0% 50%',
+  nile: '34% 55%',
   lodge: '50% 50%',
   egypt: '50% 50%',
   amazon: '50% 50%',
+  custom: '50% 50%',
 });
 
 export function buildWhatsAppUrl({ name = '', interest = 'general', message = '' } = {}) {

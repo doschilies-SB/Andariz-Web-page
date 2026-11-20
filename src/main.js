@@ -28,29 +28,32 @@ document.querySelectorAll('[data-visual-slot]').forEach((slot) => {
 });
 
 function closeMenu() {
+  if (!menuToggle || !navigation) return;
   menuToggle.setAttribute('aria-expanded', 'false');
   navigation.classList.remove('is-open');
 }
 
-menuToggle.addEventListener('click', () => {
-  const open = menuToggle.getAttribute('aria-expanded') !== 'true';
-  menuToggle.setAttribute('aria-expanded', String(open));
-  navigation.classList.toggle('is-open', open);
-});
+if (menuToggle && navigation) {
+  menuToggle.addEventListener('click', () => {
+    const open = menuToggle.getAttribute('aria-expanded') !== 'true';
+    menuToggle.setAttribute('aria-expanded', String(open));
+    navigation.classList.toggle('is-open', open);
+  });
 
-document.addEventListener('keydown', (event) => {
-  if (event.key === 'Escape' && menuToggle.getAttribute('aria-expanded') === 'true') {
-    closeMenu();
-    menuToggle.focus();
-  }
-});
-document.addEventListener('click', (event) => {
-  if (!event.target.closest('.site-header')) closeMenu();
-});
-navigation.addEventListener('click', (event) => {
-  if (event.target.closest('a')) closeMenu();
-});
-window.matchMedia('(min-width: 701px)').addEventListener('change', closeMenu);
+  document.addEventListener('keydown', (event) => {
+    if (event.key === 'Escape' && menuToggle.getAttribute('aria-expanded') === 'true') {
+      closeMenu();
+      menuToggle.focus();
+    }
+  });
+  document.addEventListener('click', (event) => {
+    if (!event.target.closest('.site-header')) closeMenu();
+  });
+  navigation.addEventListener('click', (event) => {
+    if (event.target.closest('a')) closeMenu();
+  });
+  window.matchMedia('(min-width: 701px)').addEventListener('change', closeMenu);
+}
 
 function openDialog(dialog, trigger) {
   if (!dialog) return;
@@ -100,19 +103,21 @@ document.querySelectorAll('dialog').forEach((dialog) => {
   });
 });
 
-contactForm.addEventListener('submit', (event) => {
-  event.preventDefault();
-  const data = new FormData(contactForm);
-  const href = buildWhatsAppUrl({ name: data.get('name'), interest: data.get('interest'), message: data.get('message') });
-  const link = document.createElement('a');
-  link.href = href;
-  link.target = '_blank';
-  link.rel = 'noopener noreferrer';
-  link.textContent = 'Abrir WhatsApp';
-  status.replaceChildren('Tu mensaje está preparado. Revisalo y envialo desde WhatsApp. ', link);
-  // The user clicks Send inside WhatsApp. The website sends no message itself.
-  link.click();
-});
+if (contactForm && status) {
+  contactForm.addEventListener('submit', (event) => {
+    event.preventDefault();
+    const data = new FormData(contactForm);
+    const href = buildWhatsAppUrl({ name: data.get('name'), interest: data.get('interest'), message: data.get('message') });
+    const link = document.createElement('a');
+    link.href = href;
+    link.target = '_blank';
+    link.rel = 'noopener noreferrer';
+    link.textContent = 'Abrir WhatsApp';
+    status.replaceChildren('Tu mensaje está preparado. Revisalo y envialo desde WhatsApp. ', link);
+    // The user clicks Send inside WhatsApp. The website sends no message itself.
+    link.click();
+  });
+}
 
 // Keep all public contact links in sync with the single configuration file.
 document.querySelectorAll('[data-contact]').forEach((link) => {
@@ -122,7 +127,8 @@ document.querySelectorAll('a[href^="mailto:"]').forEach((link) => {
   link.href = `mailto:${siteConfig.email}`;
   if (link.textContent.includes('@')) link.textContent = siteConfig.email;
 });
-document.querySelector('.whatsapp-icon').href = `https://wa.me/${siteConfig.whatsapp}`;
+const whatsappFooterIcon = document.querySelector('.whatsapp-icon');
+if (whatsappFooterIcon) whatsappFooterIcon.href = `https://wa.me/${siteConfig.whatsapp}`;
 
 const deepLinks = {
   '#mi-historia': 'emi-dialog', '#nuestra-forma': 'philosophy-dialog',

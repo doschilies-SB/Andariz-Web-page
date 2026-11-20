@@ -1,0 +1,56 @@
+{
+  "hero": {
+    "source_y_range": [
+      60,
+      91
+    ],
+    "height": 15,
+    "source": "Andariz Group Travel Journey Page.png",
+    "method": "contour trace, one point per source pixel"
+  },
+  "story": {
+    "source_y_range": [
+      506,
+      529
+    ],
+    "height": 13,
+    "source": "Andariz Group Travel Journey Page.png",
+    "method": "contour trace, one point per source pixel"
+  },
+  "destinations": {
+    "source_y_range": [
+      836,
+      859
+    ],
+    "height": 14,
+    "source": "Andariz Group Travel Journey Page.png",
+    "method": "contour trace, one point per source pixel"
+  },
+  "difference": {
+    "source_y_range": [
+      1197,
+      1222
+    ],
+    "height": 12,
+    "source": "Andariz Group Travel Journey Page.png",
+    "method": "contour trace, one point per source pixel"
+  },
+  "faq": {
+    "source_y_range": [
+      1415,
+      1440
+    ],
+    "height": 11,
+    "source": "Andariz Group Travel Journey Page.png",
+    "method": "contour trace, one point per source pixel"
+  },
+  "contact": {
+    "source_y_range": [
+      1788,
+      1814
+    ],
+    "height": 10,
+    "source": "Andariz Group Travel Journey Page.png",
+    "method": "contour trace, one point per source pixel"
+  }
+}

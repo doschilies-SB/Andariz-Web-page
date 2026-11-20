@@ -29,7 +29,7 @@
     </a>
     <button class="menu-toggle" aria-expanded="false" aria-controls="navigation"><span>Menú</span><span class="menu-lines" aria-hidden="true"></span></button>
     <nav id="navigation" aria-label="Navegación principal">
-      <a href="#viajes">Viajes</a><a href="#emi">Sobre Emi</a>
+      <a href="/viajes-en-grupo">Viajes</a><a href="#emi">Sobre Emi</a>
       <a href="#bitacora" data-dialog="journal-dialog" aria-haspopup="dialog" aria-controls="journal-dialog">Bitácora</a>
       <a href="#conversemos">Conversemos</a>
     </nav>
@@ -40,16 +40,16 @@
       <div class="hero-copy">
         <h1 id="hero-title"><span>Menos</span><span>lugares.</span><span>Mas tiempo</span><span>para <em>vivirlos.</em></span></h1>
         <p>Viajes pensados para conocer<br class="desktop-break"> un lugar, compartirlo y dejar<br class="desktop-break"> tiempo para la sorpresa.</p>
-        <a class="text-link" href="#viajes">Conocé los viajes <span aria-hidden="true">→</span></a>
+        <a class="text-link" href="/viajes-en-grupo">Conocé los viajes <span aria-hidden="true">→</span></a>
       </div>
       <span class="motif motif-birds hero-birds" aria-hidden="true"></span>
       <span class="motif motif-fingerprint hero-fingerprint" aria-hidden="true"></span>
       <div class="hero-art">
-        <figure class="visual-slot hero-photo" data-visual-slot="hero" role="img" aria-label="Una canoa sobre el río Negro, entre la selva y sus reflejos">
+        <figure class="visual-slot hero-photo" data-visual-slot="hero" role="img" aria-label="Un barco navegando por el río Negro en el Amazonas, rodeado de selva">
           <div class="reference-image" aria-hidden="true"></div>
-          <div class="original-annotations" aria-hidden="true"><span class="tape"></span><span class="handwritten photo-note">sin apuro</span><span class="location-label">RÍO NEGRO ·<br>BRASIL</span></div>
+          <div class="original-annotations" aria-hidden="true"><span class="tape"></span><span class="handwritten photo-note">sin apuro</span><img class="hero-palm" src="/assets/brand/hero-palm.png" alt="" width="480" height="643"><span class="location-label">RÍO NEGRO ·<br>BRASIL</span></div>
         </figure>
-        <figure class="visual-slot nile-photo" data-visual-slot="nile" role="img" aria-label="Una faluca navega por el Nilo al atardecer">
+        <figure class="visual-slot nile-photo" data-visual-slot="nile" role="img" aria-label="Una faluca navega por el río Nilo frente a un templo egipcio">
           <div class="reference-image" aria-hidden="true"></div><figcaption class="original-annotations">NILO<br>EGIPTO</figcaption>
         </figure>
       </div>
@@ -66,46 +66,62 @@
       <figure class="visual-slot emi-photo" data-visual-slot="lodge" role="img" aria-label="Un lodge de madera a orillas del río, entre la vegetación amazónica"><div class="reference-image" aria-hidden="true"></div></figure>
     </section>
 
-    <section id="viajes" class="trips-section paper" aria-labelledby="trips-title">
+    <section id="viajes" class="trips-section trips-showcase paper" aria-labelledby="trips-title">
       <div class="section-edge edge-blue" aria-hidden="true"></div>
-      <div class="trips-heading"><p class="eyebrow">VIAJES EN GRUPO <span aria-hidden="true"></span></p><h2 id="trips-title">Los viajes que tengo<br><em>para contarte.</em></h2></div>
-      <p class="handwritten trips-note">Me deje tiempo<br>para la sorpresa.</p>
       <span class="motif motif-river trips-river" aria-hidden="true"></span>
-      <div class="trip-grid">
-        <article class="trip-card egypt-card">
-          <a class="trip-card-link" href="#egipto" data-dialog="egypt-dialog" aria-haspopup="dialog" aria-controls="egypt-dialog" aria-label="Conocé la propuesta de Egipto en grupo">
-            <div class="visual-slot egypt-photo" data-visual-slot="egypt" role="img" aria-label="Las pirámides de Egipto bajo la luz cálida del atardecer"><div class="reference-image" aria-hidden="true"></div></div>
-            <div class="trip-info paper"><h3>Egipto en grupo <span aria-hidden="true">→</span></h3><p>Historia milenaria, tiempo para descubrir.</p></div>
-            <span class="reference-image egypt-stamp" aria-hidden="true"></span>
-            <span class="reference-image egypt-postmark" aria-hidden="true"></span>
-          </a>
-        </article>
-        <article class="trip-card amazon-card">
-          <a class="trip-card-link" href="#amazonas" data-dialog="amazon-dialog" aria-haspopup="dialog" aria-controls="amazon-dialog" aria-label="Conocé la propuesta de Amazonas en grupo">
-            <div class="visual-slot amazon-photo" data-visual-slot="amazon" role="img" aria-label="Una canoa entra en un canal rodeado de selva"><div class="reference-image" aria-hidden="true"></div></div>
-            <div class="trip-info paper"><h3>Amazonas en grupo <span aria-hidden="true">→</span></h3><p>Selva, comunidad y un lugar vivido desde adentro.</p><span class="motif motif-connection card-symbol" aria-hidden="true"></span></div>
-          </a>
-        </article>
+      <div class="trips-layout">
+        <div class="trips-copy">
+          <p class="eyebrow">VIAJES EN GRUPO <span aria-hidden="true"></span></p>
+          <h2 id="trips-title"><span>Viajes</span> <em>en grupo</em></h2>
+          <p>Elijo lugares que me entusiasman y armo viajes para conocerlos en grupos chicos. Con tiempo para mirar, preguntar y compartir lo que vamos descubriendo.</p>
+          <a class="button button-mustard trips-cta" href="/viajes-en-grupo">Conocé los próximos viajes <span aria-hidden="true">→</span></a>
+        </div>
+        <div class="trips-collage">
+          <p class="handwritten trips-note">Me deje tiempo<br>para la sorpresa.</p>
+          <div class="collage-piece collage-egypt">
+            <span class="collage-tape tape-left" aria-hidden="true"></span>
+            <figure class="collage-frame">
+              <div class="visual-slot egypt-photo" data-visual-slot="egypt" role="img" aria-label="Las pirámides de Egipto bajo la luz cálida del atardecer"><div class="reference-image" aria-hidden="true"></div></div>
+            </figure>
+            <span class="collage-badge" aria-hidden="true"><span class="motif motif-connection"></span></span>
+          </div>
+          <div class="collage-piece collage-amazon">
+            <span class="collage-tape tape-right" aria-hidden="true"></span>
+            <figure class="collage-frame">
+              <div class="visual-slot amazon-photo" data-visual-slot="amazon" role="img" aria-label="Una canoa entra en un canal rodeado de selva"><div class="reference-image" aria-hidden="true"></div></div>
+            </figure>
+          </div>
+        </div>
       </div>
     </section>
 
-    <section class="custom-section paper" aria-labelledby="custom-title">
+    <section class="custom-section custom-showcase paper" aria-labelledby="custom-title">
       <div class="section-edge edge-olive" aria-hidden="true"></div>
-      <span class="motif motif-immersion custom-print" aria-hidden="true"></span>
-      <h2 id="custom-title">Amazonas a tu medida</h2>
-      <p>Viajá por tu cuenta, con un itinerario<br>pensado para vos y la experiencia de Emi.</p>
-      <a href="https://wa.me/5493537327836" class="text-link" data-contact="medida" aria-haspopup="dialog" aria-controls="contact-dialog">Armemos tu viaje <span aria-hidden="true">→</span></a>
+      <div class="custom-layout">
+        <div class="custom-visual">
+          <span class="motif motif-immersion custom-print" aria-hidden="true"></span>
+          <figure class="collage-frame custom-frame">
+            <div class="visual-slot custom-photo" data-visual-slot="custom" role="img" aria-label="Una canoa entra en un canal amazónico rodeado de selva"><div class="reference-image" aria-hidden="true"></div></div>
+          </figure>
+        </div>
+        <div class="custom-copy">
+          <p class="eyebrow">VIAJES A TU MEDIDA <span aria-hidden="true"></span></p>
+          <h2 id="custom-title"><span>Amazonas</span> <span>a tu medida</span></h2>
+          <p>Viví trece años en Amazonas. Te ayudo a armar un viaje por tu cuenta, con un recorrido pensado para vos.</p>
+          <a href="https://wa.me/5493537327836" class="text-link custom-cta" data-contact="medida" aria-haspopup="dialog" aria-controls="contact-dialog">Conversemos de tu viaje <span aria-hidden="true">→</span></a>
+        </div>
+      </div>
     </section>
 
     <section id="conversemos" class="contact-section paper" aria-labelledby="contact-title">
       <div class="section-edge edge-dark" aria-hidden="true"></div>
-      <span class="contact-waves" aria-hidden="true"></span>
+      <span class="motif motif-community contact-community" aria-hidden="true"></span>
       <div class="contact-title"><h2 id="contact-title">¿Charlamos de tu<br>proximo viaje?</h2><span class="hand-line" aria-hidden="true"></span></div>
       <div class="contact-copy"><p>Contame qué te inquieta, qué te entusiasma.<br>Estoy para escucharte y ayudarte a encontrar<br>el viaje que tenga sentido para vos.</p><a class="button button-mustard" href="https://wa.me/5493537327836" data-contact="general" aria-haspopup="dialog" aria-controls="contact-dialog">Escribime <span aria-hidden="true">→</span></a></div>
       <span class="motif motif-birds contact-birds" aria-hidden="true"></span>
     </section>
   </main>
-  <footer class="site-footer"><a href="#inicio" class="footer-brand" aria-label="Andariz Expediciones, inicio">ANDARIZ</a><div class="footer-links"><a href="#privacidad" data-dialog="privacy-dialog" aria-haspopup="dialog" aria-controls="privacy-dialog">Privacidad</a><span aria-hidden="true">|</span><a href="mailto:andarizexpediciones@gmail.com">Contacto</a><a class="whatsapp-icon" href="https://wa.me/5493537327836" target="_blank" rel="noopener noreferrer" aria-label="Abrir WhatsApp de Andariz (nueva pestaña)"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><path d="M20.5 11.7a8.5 8.5 0 0 1-12.7 7.4L3 20.5l1.4-4.6A8.5 8.5 0 1 1 20.5 11.7Z"/><path d="M8.6 7.4c-.8 0-1 1.1-.7 2.2.7 2.6 3.1 5 5.7 5.5 1.1.2 2.1-.6 2.1-1.2 0-.4-1.7-1.3-2-1.1l-.7.8c-1.6-.6-3-1.8-3.5-3.3l.7-.7c.2-.3-.9-2.2-1.6-2.2Z"/></svg></a></div></footer>
+  <footer class="site-footer"><a href="#inicio" class="footer-brand" aria-label="Andariz Expediciones, inicio"><span class="motif footer-isotipo" aria-hidden="true"></span><span class="motif footer-wordmark" aria-hidden="true"></span></a><div class="footer-links"><a href="#privacidad" data-dialog="privacy-dialog" aria-haspopup="dialog" aria-controls="privacy-dialog">Privacidad</a><span aria-hidden="true">|</span><a href="mailto:andarizexpediciones@gmail.com">Contacto</a><a class="whatsapp-icon" href="https://wa.me/5493537327836" target="_blank" rel="noopener noreferrer" aria-label="Abrir WhatsApp de Andariz (nueva pestaña)"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><path d="M20.5 11.7a8.5 8.5 0 0 1-12.7 7.4L3 20.5l1.4-4.6A8.5 8.5 0 1 1 20.5 11.7Z"/><path d="M8.6 7.4c-.8 0-1 1.1-.7 2.2.7 2.6 3.1 5 5.7 5.5 1.1.2 2.1-.6 2.1-1.2 0-.4-1.7-1.3-2-1.1l-.7.8c-1.6-.6-3-1.8-3.5-3.3l.7-.7c.2-.3-.9-2.2-1.6-2.2Z"/></svg></a></div></footer>
   </div>
 
   <dialog id="emi-dialog" class="editorial-dialog" aria-labelledby="emi-dialog-title">
@@ -135,7 +151,7 @@
       <p>Valoramos una buena cama para descansar al final del día y también nos subimos a una canoa si el camino nos lleva por ahí. Entendemos que viajar implica adaptarnos a otros ritmos y costumbres, y acercarnos con respeto a quienes nos reciben.</p>
       <p>Podés venir solo, en pareja o con amigos. Nos gusta compartir una mesa, conversar sobre lo que vivimos durante el día y también tener momentos para cada uno.</p>
       <p>No hace falta haber recorrido medio mundo. Con tener curiosidad, buena predisposición y ganas de compartir el camino, ya tenemos por dónde empezar.</p>
-      <a class="button button-burgundy" href="#viajes" data-close-link>Conocé los viajes <span aria-hidden="true">→</span></a>
+      <a class="button button-burgundy" href="/viajes-en-grupo" data-close-link>Conocé los viajes <span aria-hidden="true">→</span></a>
     </div>
   </dialog>
 
